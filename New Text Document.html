@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="Bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="fontawesome-free-5.8.1-web/css/all.min.css" />
+        <link rel="stylesheet" href="View.css" />
+        <!-- Scripts -->
+        <script src="jQuery/jquery-3.3.1.min.js"></script>
+        <script src="Bootstrap/bootstrap.min.js"></script>
+        <script src="Common/Common.js"></script>
+		<script src="js.js"></script>
+    </head>
+
+    <body>
+            <div class="float-right">
+            <form action="">
+                    <input id="search" type="search">
+                    <i class="fa fa-search"></i>
+            </form>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-sm" id="tblTestCases" style="font-size: 10pt;">
+                    <thead class="thead-light">
+                        <tr>
+                            <th style="text-align: center; vertical-align: middle; cursor: pointer;">ID</th>
+                            <th style="text-align: center; vertical-align: middle; cursor: pointer;">Test case name</th>
+                            <th style="text-align: center; vertical-align: middle; cursor: pointer;">DNG artifacts</th>
+                            <th style="text-align: center; vertical-align: middle; cursor: pointer;">RQONE issues</th>
+                            <!-- <th style="text-align: center; vertical-align: middle; cursor: pointer;">Current to be executed</th> -->
+                            <th style="text-align: center; vertical-align: middle; cursor: pointer;">System condition</th>
+                            <th style="text-align: center; vertical-align: middle; cursor: pointer;">Evaluation</th>
+                            <th style="text-align: center; vertical-align: middle; cursor: pointer;">New to be executed</th>
+                            <th style="text-align: center; vertical-align: middle; cursor: pointer;">Additional information(ID of req, ID of Issue,...)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tblTestCaseBody">
+                        <tr>
+                            <td style="text-align: center; vertical-align: middle;">1</td>
+                            <td style="text-align: center; vertical-align: middle;">as</td>
+                            <td style="text-align: center; vertical-align: middle;">1</td>
+                            <td style="text-align: center; vertical-align: middle;">000</td>
+                            <!-- <td style="text-align: center; vertical-align: middle;">Current to be executed</td> -->
+                            <td style="text-align: center; vertical-align: middle;">ok</td>
+                            <td style="text-align: center; vertical-align: middle;">thoi gian</td>
+                            <td style="text-align: center; vertical-align: middle;">trong vang</td>
+                            <td style="text-align: center; vertical-align: middle;">Additional information(ID of req, ID of Issue,...)</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; vertical-align: middle;">2</td>
+                            <td style="text-align: center; vertical-align: middle;">Fa</td>
+                            <td style="text-align: center; vertical-align: middle;">1</td>
+                            <td style="text-align: center; vertical-align: middle;">1112</td>
+                            <!-- <td style="text-align: center; vertical-align: middle;">Current to be executed</td> -->
+                            <td style="text-align: center; vertical-align: middle;">ff</td>
+                            <td style="text-align: center; vertical-align: middle;">co gi</td>
+                            <td style="text-align: center; vertical-align: middle;">co don</td>
+                            <td style="text-align: center; vertical-align: middle;">Additional information(ID of req, ID of Issue,...)</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; vertical-align: middle;">3</td>
+                            <td style="text-align: center; vertical-align: middle;">An</td>
+                            <td style="text-align: center; vertical-align: middle;">1</td>
+                            <td style="text-align: center; vertical-align: middle;">66</td>
+                            <!-- <td style="text-align: center; vertical-align: middle;">Current to be executed</td> -->
+                            <td style="text-align: center; vertical-align: middle;">gg</td>
+                            <td style="text-align: center; vertical-align: middle;">ngoai</td>
+                            <td style="text-align: center; vertical-align: middle;">vet thuong</td>
+                            <td style="text-align: center; vertical-align: middle;">Additional information(ID of req, ID of Issue,...)</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; vertical-align: middle;">4</td>
+                            <td style="text-align: center; vertical-align: middle;">Lu</td>
+                            <td style="text-align: center; vertical-align: middle;">1</td>
+                            <td style="text-align: center; vertical-align: middle;">553</td>
+                            <!-- <td style="text-align: center; vertical-align: middle;">Current to be executed</td> -->
+                            <td style="text-align: center; vertical-align: middle;">wss</td>
+                            <td style="text-align: center; vertical-align: middle;">mot</td>
+                            <td style="text-align: center; vertical-align: middle;">xoa nhoa</td>
+                            <td style="text-align: center; vertical-align: middle;">Additional information(ID of req, ID of Issue,...)</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; vertical-align: middle;">5</td>
+                            <td style="text-align: center; vertical-align: middle;">Ke</td>
+                            <td style="text-align: center; vertical-align: middle;">1</td>
+                            <td style="text-align: center; vertical-align: middle;">222</td>
+                            <!-- <td style="text-align: center; vertical-align: middle;">Current to be executed</td> -->
+                            <td style="text-align: center; vertical-align: middle;">fck</td>
+                            <td style="text-align: center; vertical-align: middle;">noi buon</td>
+                            <td style="text-align: center; vertical-align: middle;">khoang trong</td>
+                            <td style="text-align: center; vertical-align: middle;">Additional information(ID of req, ID of Issue,...)</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; vertical-align: middle;">1</td>
+                            <td style="text-align: center; vertical-align: middle;">Tha</td>
+                            <td style="text-align: center; vertical-align: middle;">1</td>
+                            <td style="text-align: center; vertical-align: middle;">000</td>
+                            <!-- <td style="text-align: center; vertical-align: middle;">Current to be executed</td> -->
+                            <td style="text-align: center; vertical-align: middle;">ok</td>
+                            <td style="text-align: center; vertical-align: middle;">thoi gian</td>
+                            <td style="text-align: center; vertical-align: middle;">trong vang</td>
+                            <td style="text-align: center; vertical-align: middle;">Additional information(ID of req, ID of Issue,...)</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; vertical-align: middle;">2</td>
+                            <td style="text-align: center; vertical-align: middle;">Fa</td>
+                            <td style="text-align: center; vertical-align: middle;">1</td>
+                            <td style="text-align: center; vertical-align: middle;">1112</td>
+                            <!-- <td style="text-align: center; vertical-align: middle;">Current to be executed</td> -->
+                            <td style="text-align: center; vertical-align: middle;">ff</td>
+                            <td style="text-align: center; vertical-align: middle;">co gi</td>
+                            <td style="text-align: center; vertical-align: middle;">co don</td>
+                            <td style="text-align: center; vertical-align: middle;">Additional information(ID of req, ID of Issue,...)</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; vertical-align: middle;">3</td>
+                            <td style="text-align: center; vertical-align: middle;">An</td>
+                            <td style="text-align: center; vertical-align: middle;">1</td>
+                            <td style="text-align: center; vertical-align: middle;">66</td>
+                            <!-- <td style="text-align: center; vertical-align: middle;">Current to be executed</td> -->
+                            <td style="text-align: center; vertical-align: middle;">gg</td>
+                            <td style="text-align: center; vertical-align: middle;">ngoai</td>
+                            <td style="text-align: center; vertical-align: middle;">vet thuong</td>
+                            <td style="text-align: center; vertical-align: middle;">Additional information(ID of req, ID of Issue,...)</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; vertical-align: middle;">4</td>
+                            <td style="text-align: center; vertical-align: middle;">Lu</td>
+                            <td style="text-align: center; vertical-align: middle;">1</td>
+                            <td style="text-align: center; vertical-align: middle;">553</td>
+                            <!-- <td style="text-align: center; vertical-align: middle;">Current to be executed</td> -->
+                            <td style="text-align: center; vertical-align: middle;">wss</td>
+                            <td style="text-align: center; vertical-align: middle;">mot</td>
+                            <td style="text-align: center; vertical-align: middle;">xoa nhoa</td>
+                            <td style="text-align: center; vertical-align: middle;">Additional information(ID of req, ID of Issue,...)</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; vertical-align: middle;">5</td>
+                            <td style="text-align: center; vertical-align: middle;">Ke</td>
+                            <td style="text-align: center; vertical-align: middle;">1</td>
+                            <td style="text-align: center; vertical-align: middle;">222</td>
+                            <!-- <td style="text-align: center; vertical-align: middle;">Current to be executed</td> -->
+                            <td style="text-align: center; vertical-align: middle;">fck</td>
+                            <td style="text-align: center; vertical-align: middle;">noi buon</td>
+                            <td style="text-align: center; vertical-align: middle;">khoang trong</td>
+                            <td style="text-align: center; vertical-align: middle;">Additional information(ID of req, ID of Issue,...)</td>
+                        </tr>
+                    </tbody>
+			
+
+                </table>
+            </div>
+
+            <br/>
+            <br/>
+
+            <ul class="pagination justify-content-center" id="myPager"></ul>
+        </div>
+    </body>
+</html>
